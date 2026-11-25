@@ -46,3 +46,32 @@ ul.feats{margin:12px 0 0;padding-left:1.2em;max-width:760px}ul.feats li{margin:6
 a.card{display:block;color:inherit;transition:border-color .15s}a.card:hover{text-decoration:none;border-color:var(--accent)}
 a.card h3{color:var(--accent)}
 .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+
+/* スマホ: ヘッダーのメニューを右から出るサイドメニューにする */
+.burger{display:none;margin-left:auto;width:40px;height:40px;border-radius:10px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger span{display:block;width:20px;height:2px;border-radius:2px;background:var(--fg)}
+.burger:active{background:var(--line)}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:20;width:min(82vw,320px);background:#fff;box-shadow:-12px 0 40px rgba(0,0,0,.18);transform:translateX(105%);transition:transform .25s ease;display:flex;flex-direction:column;padding:8px 0 24px;overflow-y:auto}
+.drawer-head{display:flex;align-items:center;gap:10px;font-weight:700;padding:10px 16px 14px 20px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.drawer-head img{width:26px;height:26px}
+.drawer-x{margin-left:auto;font-size:26px;line-height:1;color:var(--sub);cursor:pointer;padding:4px 8px}
+.drawer a{display:block;padding:12px 22px;color:var(--fg);font-size:16px;border-bottom:1px solid #f2f2f5}
+.drawer a:hover{background:#f5f5f7;text-decoration:none}
+.scrim{position:fixed;inset:0;z-index:15;background:rgba(0,0,0,.35);opacity:0;pointer-events:none;transition:opacity .25s}
+.nav-t:checked~.drawer{transform:none}
+.nav-t:checked~.scrim{opacity:1;pointer-events:auto}
+@media (max-width:760px){
+ header.top nav{display:none}
+ .burger{display:flex}
+ .wrap{padding:0 18px}
+ .hero{padding:40px 18px 28px}
+ .hero img.icon{width:88px;height:88px}
+ .hero p.lead br{display:none}
+ .hero p.lead{font-size:16px}
+ .btn{font-size:16px;padding:12px 22px}
+ .shot{margin-top:28px;border-radius:8px}
+ section{padding:40px 0}
+ .links{flex-direction:column}.links .btn{justify-content:center}
+ ol.steps li{padding:12px 14px 12px 52px}
+}
+@media (min-width:761px){.drawer,.scrim{display:none}}

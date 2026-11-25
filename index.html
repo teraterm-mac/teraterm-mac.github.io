@@ -17,9 +17,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<input type="checkbox" id="nav-t" class="nav-t" hidden>
+<nav class="drawer" aria-label="メニュー"><div class="drawer-head"><img src="img/icon.png" alt="">Tera Term Mac<label for="nav-t" class="drawer-x" aria-label="close">×</label></div><a href="docs/ja/easy/index.html" onclick="document.getElementById('nav-t').checked=false">かんたんマニュアル</a><a href="docs/ja/" onclick="document.getElementById('nav-t').checked=false">ドキュメントの目次</a><a href="docs/ja/about/mac-features.html" onclick="document.getElementById('nav-t').checked=false">Mac 版だけの機能</a><a href="#install" onclick="document.getElementById('nav-t').checked=false">ダウンロード</a><a href="#support" onclick="document.getElementById('nav-t').checked=false">サポート</a><a href="https://github.com/teraterm-mac/teraterm-mac/issues" onclick="document.getElementById('nav-t').checked=false">不具合の報告・要望</a><a href="en/" onclick="document.getElementById('nav-t').checked=false">English</a></nav>
+<label for="nav-t" class="scrim"></label>
 <header class="top"><div class="wrap">
 <a class="brand" href="./"><img src="img/icon.png" alt="">Tera Term Mac</a>
 <nav><a href="docs/ja/">ドキュメント</a><a href="#install">ダウンロード</a><a href="en/">English</a></nav>
+<label for="nav-t" class="burger" aria-label="メニュー"><span></span><span></span><span></span></label>
 </div></header>
 
 <main>
