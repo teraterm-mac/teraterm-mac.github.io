@@ -41,7 +41,7 @@ a{color:#0a66d8}
 .rk.rk-wide h2{color:#1d1d1f}
 .tg li.tref{margin-top:6px}
 .ttw-tabs{display:flex;gap:6px;margin:22px 0 0;padding:0 4px;position:relative;z-index:1}
-.ttw-tabs button{flex:1;display:flex;align-items:center;gap:12px;text-align:left;font:inherit;color:#1d1d1f;cursor:pointer;
+.ttw-tabs button{-webkit-appearance:none;appearance:none;flex:1;display:flex;align-items:center;gap:12px;text-align:left;font:inherit;color:#1d1d1f;cursor:pointer;
  background:#f0f1f4;border:1px solid #d8dbe1;border-bottom:0;border-radius:12px 12px 0 0;padding:14px 18px 13px;margin-bottom:-1px;transition:background .15s}
 .ttw-tabs button:hover{background:#e7e9ee}
 .ttw-tabs button .ti{flex:none;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-size:17px;background:#dde1e8;color:#6e6e73}
