@@ -40,3 +40,10 @@ a{color:#0a66d8}
 .rk-head{font-size:20px !important;margin:30px 0 10px !important;scroll-margin-top:60px}
 .rk.rk-wide h2{color:#1d1d1f}
 .tg li.tref{margin-top:6px}
+.ttw-tabs{display:flex;gap:10px;margin:14px 0 12px}
+.ttw-tabs button{flex:1;text-align:left;font:inherit;background:#f5f5f7;border:1px solid #d2d2d7;border-radius:12px;padding:12px 16px;cursor:pointer;color:#1d1d1f}
+.ttw-tabs button b{display:block;font-size:16px}
+.ttw-tabs button small{display:block;color:#6e6e73;font-size:12.5px;margin-top:2px}
+.ttw-tabs button[aria-selected=true]{background:#fff;border-color:#0a66d8;box-shadow:0 0 0 1px #0a66d8 inset}
+.ttw-tabs button[aria-selected=true] b{color:#0a66d8}
+.ttw-more{margin:4px 0 0;font-size:14px}.ttw-more a{text-decoration:none}
