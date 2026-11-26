@@ -41,19 +41,18 @@
 <p class="lead">Tera Term を macOS 用に移植したターミナルです。<br>いつもの SSH やマクロを Mac でそのまま使えます。</p>
 <a class="btn" href="https://github.com/teraterm-mac/teraterm-mac/releases/latest/download/TeraTermMac.dmg">⬇︎ ダウンロード (無料)</a>
 <div class="meta">macOS 11 以降 · Apple Silicon / Intel</div>
-<div class="gal" id="gal">
+<div class="gal" id="gal" role="button" tabindex="0" aria-label="タップ・クリックで次の画面へ" title="タップ・クリックで次の画面へ">
 <div class="gal-stage"><figure class="gal-slide is-on"><img src="img/hero.jpg" alt="いつもの Tera Term の画面と「新しい接続」"><figcaption>いつもの Tera Term の画面と「新しい接続」</figcaption></figure><figure class="gal-slide"><img src="img/gallery/mado_grid4_ja.jpg" alt="1 つのウィンドウに画面を並べる (窓割り)" loading="lazy"><figcaption>1 つのウィンドウに画面を並べる (窓割り)</figcaption></figure><figure class="gal-slide"><img src="img/gallery/ttmenu_ja.jpg" alt="よく使う接続先を登録 (TeraTerm Menu)" loading="lazy"><figcaption>よく使う接続先を登録 (TeraTerm Menu)</figcaption></figure><figure class="gal-slide"><img src="img/gallery/setup_theme_ja.jpg" alt="設定画面も Windows 版と同じ並び" loading="lazy"><figcaption>設定画面も Windows 版と同じ並び</figcaption></figure></div>
-<div class="gal-thumbs"><button type="button" class="gal-thumb is-on" aria-label="いつもの Tera Term の画面と「新しい接続」"><img src="img/hero.jpg" alt="" loading="lazy"></button><button type="button" class="gal-thumb" aria-label="1 つのウィンドウに画面を並べる (窓割り)"><img src="img/gallery/mado_grid4_ja.jpg" alt="" loading="lazy"></button><button type="button" class="gal-thumb" aria-label="よく使う接続先を登録 (TeraTerm Menu)"><img src="img/gallery/ttmenu_ja.jpg" alt="" loading="lazy"></button><button type="button" class="gal-thumb" aria-label="設定画面も Windows 版と同じ並び"><img src="img/gallery/setup_theme_ja.jpg" alt="" loading="lazy"></button></div>
+<div class="gal-dots" aria-hidden="true"></div>
 </div>
 <script>
-(function(){var g=document.getElementById('gal'),sl=g.querySelectorAll('.gal-slide'),th=g.querySelectorAll('.gal-thumb'),n=sl.length,cur=0,timer=null,
-reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-function show(i){cur=(i+n)%n;for(var k=0;k<n;k++){sl[k].classList.toggle('is-on',k===cur);th[k].classList.toggle('is-on',k===cur)}}
-function play(){if(reduce)return;stop();timer=setInterval(function(){show(cur+1)},5000)}
-function stop(){if(timer)clearInterval(timer);timer=null}
-th.forEach(function(b,i){b.addEventListener('click',function(){show(i);play()})});
-g.addEventListener('mouseenter',stop);g.addEventListener('mouseleave',play);
-show(Math.floor(Math.random()*n));play();})();
+(function(){var g=document.getElementById('gal'),sl=g.querySelectorAll('.gal-slide'),n=sl.length,cur=0,dots=g.querySelector('.gal-dots');
+for(var k=0;k<n;k++)dots.appendChild(document.createElement('i'));
+var ds=dots.querySelectorAll('i');
+function show(i){cur=(i+n)%n;for(var k=0;k<n;k++){sl[k].classList.toggle('is-on',k===cur);ds[k].classList.toggle('is-on',k===cur)}}
+g.addEventListener('click',function(){show(cur+1)});
+g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '||e.key==='ArrowRight'){e.preventDefault();show(cur+1)}else if(e.key==='ArrowLeft'){show(cur-1)}});
+show(Math.floor(Math.random()*n));})();
 </script>
 </div>
 
