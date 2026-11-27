@@ -12,7 +12,8 @@ header.top .brand img{width:28px;height:28px}
 header.top nav{margin-left:auto;display:flex;gap:20px;font-size:14px}
 header.top nav a{color:var(--sub)}header.top nav a:hover{color:var(--fg);text-decoration:none}
 .hero{text-align:center;padding:72px 0 40px}
-.hero img.icon{width:128px;height:128px}
+.hero img.icon{width:128px;height:128px;image-rendering:pixelated}
+.hero p.indep{font-size:13px;color:var(--sub);max-width:640px;margin:14px auto 22px;line-height:1.6}
 .hero h1{font-size:clamp(36px,6vw,56px);line-height:1.15;margin:16px 0 12px;letter-spacing:-.02em}
 .hero p.lead{font-size:clamp(17px,2.2vw,21px);color:var(--sub);margin:0 auto 28px;max-width:720px}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:600;font-size:17px;padding:14px 28px;border-radius:999px;box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 35%,transparent)}
