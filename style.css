@@ -12,7 +12,10 @@ header.top .brand img{width:28px;height:28px}
 header.top nav{margin-left:auto;display:flex;gap:20px;font-size:14px}
 header.top nav a{color:var(--sub)}header.top nav a:hover{color:var(--fg);text-decoration:none}
 .hero{text-align:center;padding:72px 0 40px}
-.hero img.icon{width:128px;height:128px;image-rendering:pixelated}
+.hero img.icon{width:128px;height:128px}
+.icon-evo{display:inline-flex;align-items:center;gap:14px}
+.icon-evo .icon-classic{width:48px;height:48px;image-rendering:pixelated;opacity:.85}
+.icon-evo .evo-arrow{font-size:34px;font-weight:700;color:#f5b800;letter-spacing:-4px;line-height:1}
 .hero p.indep{font-size:13px;color:var(--sub);max-width:640px;margin:14px auto 22px;line-height:1.6}
 .hero h1{font-size:clamp(36px,6vw,56px);line-height:1.15;margin:16px 0 12px;letter-spacing:-.02em}
 .hero p.lead{font-size:clamp(17px,2.2vw,21px);color:var(--sub);margin:0 auto 28px;max-width:720px}
@@ -67,6 +70,8 @@ a.card h3{color:var(--accent)}
  .wrap{padding:0 18px}
  .hero{padding:40px 18px 28px}
  .hero img.icon{width:88px;height:88px}
+ .icon-evo .icon-classic{width:36px;height:36px}
+ .icon-evo .evo-arrow{font-size:26px}
  .hero p.lead br{display:none}
  .hero p.lead{font-size:16px}
  .btn{font-size:16px;padding:12px 22px}
