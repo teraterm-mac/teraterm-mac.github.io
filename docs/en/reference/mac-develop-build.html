@@ -132,7 +132,7 @@ In addition, <code>TERAMAC_PROXY_*</code> variables are how the app passes proxy
 <tr><td>scripts/gen_charwidth_tables.py</td><td>Generates <code>Sources/TeraCore/CharWidthTables.swift</code> from upstream unicode_asian_width.tbl, unicode_combine.tbl and unicode_emoji.tbl in <code>teraterm/teraterm</code>.<br><code>python3 scripts/gen_charwidth_tables.py [teraterm/teraterm folder]</code></td></tr>
 <tr><td>scripts/gen_sbcs_tables.py</td><td>Generates <code>Sources/TeraCore/SBCSTables.swift</code> from upstream <code>teraterm/teraterm/mapping/*.map</code>.<br><code>python3 scripts/gen_sbcs_tables.py [mapping folder]</code></td></tr>
 <tr><td>scripts/notes2html.py</td><td>Converts release notes (the same Markdown as on GitHub Releases) into HTML for Sparkle's update window. Only paragraphs, headings, bullet lists, code, bold and links are supported. Called by appcast.sh.<br><code>python3 scripts/notes2html.py notes.md &gt; notes.html</code></td></tr>
-<tr><td>scripts/make_icon.swift</td><td>Makes AppIcon.iconset from the upstream icon (teraterm/common/teraterm.ico)</td></tr>
+<tr><td>scripts/make_icon.swift</td><td>Makes AppIcon.iconset from the original author T. Teranishi's icon (teraterm/common/teraterm_classic.ico)</td></tr>
 <tr><td>scripts/make_dmg_bg.swift</td><td>Draws the DMG background (called by bundle.sh)</td></tr>
 </table>
 

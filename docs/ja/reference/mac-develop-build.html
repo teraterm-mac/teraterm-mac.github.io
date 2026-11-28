@@ -132,7 +132,7 @@ swift test --filter TerminalTests/testXxx   # 1 つのテストだけ
 <tr><td>scripts/gen_charwidth_tables.py</td><td>本家の <code>teraterm/teraterm</code> の unicode_asian_width.tbl・unicode_combine.tbl・unicode_emoji.tbl から <code>Sources/TeraCore/CharWidthTables.swift</code> を作ります。<br><code>python3 scripts/gen_charwidth_tables.py [teraterm/teraterm のフォルダ]</code></td></tr>
 <tr><td>scripts/gen_sbcs_tables.py</td><td>本家の <code>teraterm/teraterm/mapping/*.map</code> から <code>Sources/TeraCore/SBCSTables.swift</code> を作ります。<br><code>python3 scripts/gen_sbcs_tables.py [mapping のフォルダ]</code></td></tr>
 <tr><td>scripts/notes2html.py</td><td>リリースノート (GitHub Releases と同じ Markdown) を、更新の画面 (Sparkle) に出す HTML にします。使えるのは段落・見出し・箇条書き・コード・太字・リンクだけです。appcast.sh が呼びます。<br><code>python3 scripts/notes2html.py notes.md &gt; notes.html</code></td></tr>
-<tr><td>scripts/make_icon.swift</td><td>本家のアイコン (teraterm/common/teraterm.ico) から AppIcon.iconset を作ります</td></tr>
+<tr><td>scripts/make_icon.swift</td><td>原作者 寺西さん作のアイコン (teraterm/common/teraterm_classic.ico) から AppIcon.iconset を作ります</td></tr>
 <tr><td>scripts/make_dmg_bg.swift</td><td>DMG の背景の絵を描きます (bundle.sh が呼びます)</td></tr>
 </table>
 
